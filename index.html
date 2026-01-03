@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEQUIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the quiz</h1>
+    <p>Please select the quiz you want to take.</p>
+    <div class="card-container">
+        <div class="quiz-cards" onclick="startQuiz('html')">
+            <h2>HTML Quiz</h2>
+            <p>Test your knowledge of HTML.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('css')">
+            <h2>CSS Quiz</h2>
+            <p>Test your knowledge of CSS.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('js')">
+            <h2>JavaScript Quiz</h2>
+            <p>Test your knowledge of JavaScript.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('php')">
+            <h2>PHP Quiz</h2>
+            <p>Test your knowledge of PHP.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('mysql')">
+            <h2>MySQL Quiz</h2>
+            <p>Test your knowledge of MySQL.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('python')">
+            <h2>Python Quiz</h2>
+            <p>Test your knowledge of Python.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('java')">
+            <h2>Java Quiz</h2>
+            <p>Test your knowledge of Java.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('csharp')">
+            <h2>C# Quiz</h2>
+            <p>Test your knowledge of C#.</p>
+        </div>
+        <div class="quiz-cards" onclick="startQuiz('cpp')">
+            <h2>C++ Quiz</h2>
+            <p>Test your knowledge of C++.</p>
+        </div>
+        <div class="quiz-cards">
+            <h2>Coming soon..</h2>
+            <p>More quiz will be added.</p>
+        </div>
+    </div>
+
+    <script>
+        function startQuiz(type) {
+            localStorage.setItem("quizType", type);
+            window.location.href = "quiz.html";
+        }
+    </script>
+</body>
+</html>
