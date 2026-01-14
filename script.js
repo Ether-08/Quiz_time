@@ -442,10 +442,10 @@ const quizzes={
     {
         q:"3.Which header file is used for input and output in C++?",
         options:[
-            "<stdio.h>",
-            "<iostream>",
-            "<conio.h>",
-            "<stdlib.h>"
+             "&lt;stdio.h&gt;",
+             "&lt;iostream&gt;",
+             "&lt;conio.h&gt;",
+             "&lt;stdlib.h&gt;"
         ],
         answer:1
     },
